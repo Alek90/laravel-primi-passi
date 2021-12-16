@@ -18,7 +18,7 @@
             }
             
             html, body {
-                background-color: white;
+                background-color: whitesmoke;
             }
 
             header {
