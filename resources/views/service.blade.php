@@ -16,9 +16,9 @@
                 margin: 0;
                 padding: 0;
             }
-
+            
             html, body {
-                background-color: rgb(17, 15, 03);
+                background-color: blue;
             }
 
             header {
@@ -70,7 +70,7 @@
                         <a href="http://127.0.0.1:8000/{{$item}}"> {{ $item }} </a>
                         @else
                         <a href="http://127.0.0.1:8000/"> {{ $item }} </a>
-                        @endif
+                        @endif         
                     </li>
                     @endforeach
                 </ul>

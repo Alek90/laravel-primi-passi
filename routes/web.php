@@ -24,3 +24,36 @@ Route::get('/', function () {
     ];
     return view('home', $data);
 });
+
+
+Route::get('/about', function () {
+    $data = [
+        "items" => ['home', 'about', 'products', 'service', 'contacts'],
+        
+    ];
+    return view('about', $data);
+});
+
+Route::get('/products', function () {
+    $data = [
+        "items" => ['home', 'about', 'products', 'service', 'contacts'],
+        
+    ];
+    return view('products', $data);
+});
+
+Route::get('/service', function () {
+    $data = [
+        "items" => ['home', 'about', 'products', 'service', 'contacts'],
+        
+    ];
+    return view('service', $data);
+});
+
+Route::get('/contacts', function () {
+    $data = [
+        "items" => ['home', 'about', 'products', 'service', 'contacts'],
+        
+    ];
+    return view('contacts', $data);
+});
