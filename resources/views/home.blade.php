@@ -11,26 +11,59 @@
 
         <!-- Styles -->
         <style>
+            * { 
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
             html, body {
                 background-color: black;
                 color: white;
-            
+            }
+
+            header {
+                height: 75px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+
+            nav {
+                width: 40%;
+            }
+
+            .hr_list {
+                width: 100%;
+                list-style: none;
+                text-align: center;
+            }
+
+            li {
+                display: inline;
+                
             }
 
            
         </style>
     </head>
     <body>
+        
+        <header>
+
+            <h1>Hello Word</h1>
 
             <nav>
-                <ul>
+                <ul class="hr_list">
                     @foreach ($items as $item)
                     <li>{{ $item }}</li>
                     @endforeach
                 </ul>
             </nav>
 
-        <h1>Hello Word</h1>
+        </header>
+
+
+        
 
     </body>
 </html>

@@ -19,7 +19,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $data = [
-        "items" => ['home', 'about', 'products', 'service', 'contacts']
+        "items" => ['home', 'about', 'products', 'service', 'contacts'],
+        
     ];
     return view('home', $data);
 });
