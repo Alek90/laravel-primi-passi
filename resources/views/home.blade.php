@@ -22,6 +22,14 @@
     </head>
     <body>
 
+            <nav>
+                <ul>
+                    @foreach ($items as $item)
+                    <li>{{ $item }}</li>
+                    @endforeach
+                </ul>
+            </nav>
+
         <h1>Hello Word</h1>
 
     </body>
