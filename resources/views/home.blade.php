@@ -66,11 +66,12 @@
                 <ul class="hr_list">
                     @foreach ($items as $item)
                     <li>
-                        @if($item != 'home')
+                        <!-- @if($item != 'home')
                         <a href="http://127.0.0.1:8000/{{$item}}"> {{ $item }} </a>
                         @else
                         <a href="http://127.0.0.1:8000/"> {{ $item }} </a>
-                        @endif
+                        @endif -->
+                        <a href="{{ route($item) }}"> {{ 'item' }} </a>
                     </li>
                     @endforeach
                 </ul>
